@@ -4,7 +4,7 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch">>/etc/pacman.conf
 sudo pacman -S archlinuxcn-keyring --noconfirm
 sudo pacman -Syyu --noconfirm
 sudo pacman -S base-devel --noconfirm
-sudo pacman -S google-chrome yay sqlmap metasploit nmap fcitx-im fcitx-configtool fcitx-googlepinyin -noconfirm
+sudo pacman -S google-chrome yay sqlmap metasploit nmap fcitx-im fcitx-configtool fcitx-googlepinyin --noconfirm
 sudo touch ~/.xprofile
 echo "export LC_ALL=zh_CN.UTF-8
 export GTK_IM_MODULE=fcitx

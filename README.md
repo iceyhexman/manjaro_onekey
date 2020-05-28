@@ -8,8 +8,8 @@
 sudo pacman-mirrors -GB testing -c China
 echo "[archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch">>/etc/pacman.conf
+sudo pacman -Syu --noconfirm
 sudo pacman -S archlinuxcn-keyring antergos-keyring --noconfirm
-sudo pacman -Syyu --noconfirm
 sudo pacman -S base-devel --noconfirm
 sudo pacman -S google-chrome yay sqlmap metasploit nmap fcitx-im fcitx-configtool fcitx-googlepinyin -noconfirm
 sudo touch ~/.xprofile

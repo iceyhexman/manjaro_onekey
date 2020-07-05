@@ -2,7 +2,7 @@
 
 安装时候的问题：https://www.jianshu.com/p/c07daada0b52
 
-配置archlinuxcn和blackarch源: `sudo gedit /etc/pacman.conf`
+配置archlinuxcn和blackarch源: `sudo gedit /etc/pacman.conf`   or `sudo nano /etc/pacman.conf`
 ```
 [archlinuxcn]
 Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch

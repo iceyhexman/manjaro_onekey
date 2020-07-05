@@ -31,7 +31,7 @@ export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=“@im=fcitx">~/.xprofile
 sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
-sudo chsh -s /bin/zsh
+#sudo chsh -s /bin/zsh   
 yay -S typora --noconfirm
 yay -S electronic-wechat ieaseMusic yaourt --confirm #微信+网易云
 yay -S lsd --confirm # 美化版ls

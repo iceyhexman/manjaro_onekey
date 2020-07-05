@@ -24,7 +24,7 @@ sudo pacman-mirrors -GB testing -c China
 sudo pacman -Syu --noconfirm
 sudo pacman -S archlinuxcn-keyring antergos-keyring --noconfirm
 sudo pacman -S base-devel --noconfirm
-sudo pacman -S google-chrome yay sqlmap metasploit nmap fcitx-im fcitx-configtool fcitx-googlepinyin -noconfirm
+sudo pacman -S google-chrome yay sqlmap metasploit nmap fcitx-im fcitx-configtool fcitx-rime -noconfirm   #rime输入法
 sudo touch ~/.xprofile
 echo "export LC_ALL=zh_CN.UTF-8
 export GTK_IM_MODULE=fcitx

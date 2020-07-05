@@ -39,6 +39,23 @@ yay -S cnpm --confirm #taobao npm
 yay -S archlinuxcn/qq-linux --confirm # linuxqq
 ```
 
+[rime候选词配置](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E6%AF%8F%E9%A0%81%E5%80%99%E9%81%B8%E6%95%B8)rime
+rime中文简体长期
+`build`目录创建`luna_pinyin.custom.yaml`
+```
+patch:
+  switches:                   # 注意縮進
+    - name: ascii_mode
+      reset: 0                # reset 0 的作用是當從其他輸入方案切換到本方案時，
+      states: [ 中文, 西文 ]  # 重設爲指定的狀態，而不保留在前一個方案中設定的狀態。
+    - name: full_shape        # 選擇輸入方案後通常需要立即輸入中文，故重設 ascii_mode = 0；
+      states: [ 半角, 全角 ]  # 而全／半角則可沿用之前方案中的用法。
+    - name: simplification
+      reset: 1                # 增加這一行：默認啓用「繁→簡」轉換。
+      states: [ 漢字, 汉字 ]
+```
+
+
 配置`~/.zshrc`
 
 

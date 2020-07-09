@@ -2,6 +2,8 @@
 
 安装时候的问题：https://www.jianshu.com/p/c07daada0b52
 
+
+
 配置archlinuxcn和blackarch源: `sudo gedit /etc/pacman.conf`   or `sudo nano /etc/pacman.conf`
 ```
 [archlinuxcn]
@@ -38,6 +40,20 @@ yay -S lsd --confirm # 美化版ls
 yay -S cnpm --confirm #taobao npm
 yay -S archlinuxcn/qq-linux --confirm # linuxqq
 ```
+
+如果`pacman -Syy`出现
+```
+错误：无法升级 core (软件仓库没有配置服务器信息)
+错误：无法升级 extra (软件仓库没有配置服务器信息)
+错误：无法升级 community (软件仓库没有配置服务器信息)
+错误：无法升级 multilib (软件仓库没有配置服务器信息)
+```
+
+使用
+```
+sudo pacman-mirrors -c China
+```
+
 
 [rime候选词配置](https://github.com/rime/home/wiki/CustomizationGuide#%E4%B8%80%E4%BE%8B%E5%AE%9A%E8%A3%BD%E6%AF%8F%E9%A0%81%E5%80%99%E9%81%B8%E6%95%B8)rime
 rime中文简体长期
